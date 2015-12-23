@@ -5,7 +5,7 @@ INCLUDES 	= -I./MITAI/Core -I ./MITAI/Services -I./MITAI/liblo_new -I./MITAI/por
 LIBS 		= -L./MITAI/lib -lmcore -lmservice -llo -lportaudio -lpt -lasound -lpthread
 CC          	= g++
 
-.PHONY: mitai clean
+.PHONY: mitai clean veryclean
 
 all:	mitai myApp
 
@@ -20,4 +20,9 @@ myApp: $(MITAIAPP)
 
 clean:
 	rm -f *.o   
+	cd ./MITAI/; make clean;
+
+veryclean:
+	make clean
 	rm -f $(PROG)
+	cd ./MITAI/; make veryclean;

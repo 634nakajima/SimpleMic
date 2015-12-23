@@ -12,7 +12,7 @@ all:	libmservice.a
 
 clean:
 	rm -f $(POBJS)   
-	rm -f libmcore.a;
+	rm -f libmservice.a;
 
 veryclean:
 	rm -f $(POBJS)   

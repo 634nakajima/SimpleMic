@@ -27,4 +27,5 @@ veryclean:
 	cd liblo_new; make veryclean;
 	cd porttime; make veryclean;
 	cd Core; make veryclean;
-	cd Services; make verylean;	
+	cd Services; make veryclean;
+	
