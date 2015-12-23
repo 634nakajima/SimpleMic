@@ -15,7 +15,6 @@
 #include <list>
 #include <iostream>
 #include <fstream>
-#include "SimpleHash.h"
 
 enum {module_new, module_delete};
 
@@ -166,7 +165,7 @@ void ModuleManager<T>::setMInfo(const char *mAddr, const char* input, const char
     
     //read icon file
     char filePath[128];
-    strcpy(filePath, "MITAI.app/Contents/Resources/Coffeegrinder.png");
+    strcpy(filePath, "/home/root/SimpleMic/Default.png");
     std::ifstream fin(filePath, std::ios::in | std::ios::binary);
     if(fin.fail()) {
         std::cerr << "File does not exist.\n";
@@ -192,8 +191,7 @@ void ModuleManager<T>::setMInfo(const char *mAddr, const char* input, const char
     
     //read icon file
     char filePath[128];
-    //strcpy(filePath, "MITAI.app/Contents/Resources/");
-    strcpy(filePath, "/Users/kannolab_mbp1/Desktop/MITAI.app/Contents/Resources/");
+    strcpy(filePath, "/home/root/SimpleMic/");
     strcat(filePath, icon);
     std::ifstream fin(filePath, std::ios::in | std::ios::binary);
     if(fin.fail()) {
