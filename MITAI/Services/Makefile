@@ -1,5 +1,5 @@
-POBJS		= ADC.o
-CFLAGS = -std=c++11 -I ../Core -I ../liblo_new -I ../porttime
+POBJS		= ADC.o DAC.o
+CFLAGS = -std=c++11 -I ../Core -I../Peripheral -I ../liblo_new -I ../porttime
 
 CC          	= g++
 
